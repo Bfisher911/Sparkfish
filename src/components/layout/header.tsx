@@ -8,7 +8,7 @@ export function Header() {
             <div className="container flex h-16 items-center justify-between">
                 <Link href="/" className="flex items-center space-x-2">
                     <Image src="/logo.png" alt="Sparkfish Logo" width={32} height={32} className="object-contain" />
-                    <span className="font-bold inline-block text-xl tracking-tight text-primary">Spark<span className="text-secondary">fish</span></span>
+                    <span className="font-bold inline-block text-xl tracking-tight text-primary">Spark<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F24405] to-orange-400">fish</span></span>
                 </Link>
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
                     <Link href="/programs" className="transition-colors hover:text-foreground/80 text-foreground/60">Programs</Link>
