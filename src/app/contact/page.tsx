@@ -103,30 +103,25 @@ export default function ContactPage() {
                     <div>
                         <h2 className="text-2xl font-bold">Book a Strategy Call</h2>
                         <p className="text-muted-foreground mt-2">
-                            Prefer to speak directly? Select a time on Blaine's calendar below.
+                            Prefer to speak directly? Select a time on Blaine's calendar to discuss your needs.
                         </p>
                     </div>
 
-                    <div className="rounded-2xl border overflow-hidden bg-card h-[600px] relative">
-                        <iframe
-                            src="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&ismsaljsauthenabled&ep=plink"
-                            width="100%"
-                            height="100%"
-                            frameBorder="0"
-                            className="absolute inset-0 z-10 bg-white"
-                            title="Microsoft Bookings"
-                        />
-                        {/* Fallback while loading */}
-                        <div className="absolute inset-0 flex items-center justify-center p-8 text-center bg-slate-50 dark:bg-slate-900 border">
-                            <div className="space-y-4">
-                                <p className="text-muted-foreground">If the calendar widget fails to load:</p>
-                                <Button asChild>
-                                    <a href="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noreferrer">
-                                        Open Calendar in New Tab
-                                    </a>
-                                </Button>
-                            </div>
+                    <div className="rounded-2xl border p-8 bg-card flex flex-col items-center text-center space-y-6 shadow-sm h-full justify-center min-h-[400px]">
+                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2" /><line x1="16" x2="16" y1="2" y2="6" /><line x1="8" x2="8" y1="2" y2="6" /><line x1="3" x2="21" y1="10" y2="10" /></svg>
                         </div>
+                        <div>
+                            <h3 className="text-xl font-medium mb-2">Schedule via Microsoft Bookings</h3>
+                            <p className="text-muted-foreground max-w-sm mx-auto">
+                                View available times and schedule a strategy call directly on Blaine's calendar.
+                            </p>
+                        </div>
+                        <Button asChild size="lg" className="w-full sm:w-auto">
+                            <a href="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noreferrer">
+                                Open Calendar
+                            </a>
+                        </Button>
                     </div>
                 </div>
             </div>
