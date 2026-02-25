@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "About Us | Sparkfish",
@@ -30,9 +31,14 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold mt-12 mb-4">Meet Our Founder</h2>
 
                 <div className="flex flex-col md:flex-row gap-8 items-start mt-6">
-                    <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl w-full md:w-1/3 aspect-square flex items-center justify-center p-8 text-center border">
-                        {/* Placeholder for Blaine's photo */}
-                        <span className="text-muted-foreground">Blaine's Photo</span>
+                    <div className="relative rounded-2xl w-full md:w-1/3 aspect-[3/4] overflow-hidden border shadow-sm">
+                        <Image
+                            src="/blaine_profile.jpg"
+                            alt="Blaine Fisher"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                        />
                     </div>
                     <div className="md:w-2/3 space-y-4">
                         <h3 className="text-xl font-bold">Blaine Fisher</h3>
