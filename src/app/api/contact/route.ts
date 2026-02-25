@@ -49,7 +49,7 @@ export async function POST(req: Request) {
 
         const { data, error } = await resend.emails.send({
             from: "Sparkfish Contact <onboarding@resend.dev>", // replace with verified domain in production
-            to: "bfisher3@tulane.edu",
+            to: "Bfisher3@tulane.edu",
             replyTo: email,
             subject: `New Sparkfish Inquiry from ${name}`,
             text: `

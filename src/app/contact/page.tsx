@@ -109,7 +109,7 @@ export default function ContactPage() {
 
                     <div className="rounded-2xl border overflow-hidden bg-card h-[600px] relative">
                         <iframe
-                            src="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&isamsaljsauthenabled&ep=plink"
+                            src="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&ismsaljsauthenabled&ep=plink"
                             width="100%"
                             height="100%"
                             frameBorder="0"
@@ -121,7 +121,7 @@ export default function ContactPage() {
                             <div className="space-y-4">
                                 <p className="text-muted-foreground">If the calendar widget fails to load:</p>
                                 <Button asChild>
-                                    <a href="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&isamsaljsauthenabled&ep=plink" target="_blank" rel="noreferrer">
+                                    <a href="https://outlook.office.com/bookwithme/user/82c5edc29d764a0e8d6cbb1662f1ceec@tulane.edu?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noreferrer">
                                         Open Calendar in New Tab
                                     </a>
                                 </Button>
