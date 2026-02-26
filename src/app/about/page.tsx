@@ -34,7 +34,7 @@ export default function AboutPage() {
                     <div className="relative rounded-2xl w-full md:w-1/3 aspect-[3/4] overflow-hidden border shadow-sm">
                         <Image
                             src="/blaine_profile.jpg"
-                            alt="Blaine Fisher"
+                            alt="Blaine Fisher Profile"
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 33vw"
